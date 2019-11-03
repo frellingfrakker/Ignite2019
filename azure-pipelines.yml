@@ -64,7 +64,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactsStagingDirectory)/src/PokerLeagueManager.Utilities'
+    PathtoPublish: '$(Build.SourcesDirectory)/src/PokerLeagueManager.Utilities'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-    TargetPath: "Utilities"
+    TargetPath: "Utilitity"
