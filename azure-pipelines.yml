@@ -46,7 +46,13 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)'
+    PathtoPublish: '$(Build.SourcesDirectory)/src/PokerLeagueManager.DB.EventStore'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)/src/PokerLeagueManager.DB.QueryStore'
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
