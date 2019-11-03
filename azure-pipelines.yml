@@ -47,17 +47,17 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)'
-    ArtifactName: 'dropDacPac'
+    ArtifactName: 'drop'
     publishLocation: 'Container'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '/deploy'
-    ArtifactName: 'dropDeploy'
+    PathtoPublish: '$(Build.SourcesDirectory)/deploy'
+    ArtifactName: 'drop'
     publishLocation: 'Container'
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactsStagingDirectory)/src/PokerLeagueManager.Utilities/bin/Debug'
-    ArtifactName: 'dropUtility'
+    ArtifactName: 'drop'
     publishLocation: 'Container'
