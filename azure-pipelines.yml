@@ -44,19 +44,19 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: PublishBuildArtifacts@1
+- task: PublishBuildArtifacts1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: PublishBuildArtifacts@1
+- task: PublishBuildArtifacts2
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)/deploy'
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: PublishBuildArtifacts@1
+- task: PublishBuildArtifacts3
   inputs:
     PathtoPublish: '$(Build.ArtifactsStagingDirectory)/src/PokerLeagueManager.Utilities/bin/Debug'
     ArtifactName: 'drop'
