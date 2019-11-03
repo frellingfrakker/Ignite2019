@@ -67,4 +67,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactsStagingDirectory)/src/PokerLeagueManager.Utilities/bin/Debug'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-    TargetPath: 'Utilities'
